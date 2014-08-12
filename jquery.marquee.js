@@ -221,6 +221,9 @@
                 if (css3AnimationIsSupported) {
                     animationCss3Str = animationName + ' ' + o.duration / 1000 + 's ' + o.delayBeforeStart / 1000 + 's infinite ' + o.css3easing;
                     $this.data('css3AnimationIsSupported', true);
+                    console.log('css3 animation for marquee');
+                } else {
+                    console.log('NO css3 animation for marquee');
                 }
             }
 
